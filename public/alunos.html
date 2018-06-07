@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+    <title>UNESP: Câmpus de Bauru - Faculdade de Ciências</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    
+    <link rel="stylesheet" href="style/index.css" type="text/css">
+</head>
+
+<body>
+    <div id="container--main">
+        <div id="container--topbar">
+            <div id="image--logounesp"></div>
+            <div id="container--topbar-buttons">
+                <div id="container--topbar-links">
+                    <span class="button--empty">Página inicial</span>
+                    <span> | </span>
+                    <span class="button--empty">Imprensa</span>
+                    <span> | </span>
+                    <span class="button--empty">Fale Conosco</span>
+                </div>
+                <div id="container--topbar-dropdown">
+                    <input type="text" class="input--empty" placeholder="Acesso rápido">
+                    <input type="text" class="input--empty" placeholder="Unidades">
+                    <input type="text" class="input--empty">
+                </div>
+            </div>
+        </div>
+
+        <div class="text--title"><span>Faculdade de Ciências</span></div>
+
+        <div id="container--page">
+            <div id="container--menu">
+                <a href="../index.html"><button class="button--menu">Requerimentos</button></a>
+                <a href="orientacoes.html"><button class="button--menu">Orientações</button></a>
+                <a href="editais.html"><button class="button--menu">Editais</button></a>
+                <a href="oportunidades.html"><button class="button--menu">Outras oportunidades</button></a>
+                <a href="depoimentos.html"><button class="button--menu">Depoimentos</button></a>
+                <button class="button--menu" onclick="expand()">Study at UNESP</button>
+                <div id="container--submenu" class="status--hidden">
+                    <a href="about.html" class='container--submenu-button'><span class='text--submenu'>About UNESP</span></a>
+                    <a href="apply.html" class='container--submenu-button'><span class='text--submenu'>How to apply</span></a>
+                    <a href="beforearrival.html" class='container--submenu-button'><span class='text--submenu'>Preparing for travel</span></a>
+                    <a href="arriving.html" class='container--submenu-button'><span class='text--submenu'>Arriving in Brazil</span></a>
+                    <a href="contact.html" class='container--submenu-button'><span class='text--submenu'>Contact</span></a>
+                </div>
+                <a href="contato.html"><button class="button--menu">Contato</button></a>
+                <a href="alunos.html"><button class="button--menu button--menu-admin">Alunos</button></a>
+            </div>
+
+            <div id="container--content">
+                <div id="container--path">
+                    <span class="button--empty text--path">Página inicial</span>
+                    <span class="text--arrow"> > </span>
+                    <span class="text--path text--greyed">Administração</span>
+                    <span class="text--arrow"> > </span>
+                    <span class="text--path text--greyed">Intercâmbio</span>
+                </div>
+
+                <span class="text--title-article">Lista de alunos</span>
+                
+                <br><br><br>
+
+                <div id="container--table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>RA</th>
+                                <th>Nome</th>
+                                <th>Curso</th>
+                                <th>Edital</th>
+                                <th>País Destino</th>
+                                <th>Cidade Destino</th>
+                                <th>Universidade Destino</th>
+                                <th>Data Ida</th>
+                                <th>Data Volta</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+
+                <br><br><br>
+
+                <span class="text--title-article">Cadastrar novo aluno</span>
+
+                <br><br><br>
+
+                <form>
+                    <div style="display: flex; justify-content: space-between">
+                        <label>RA</label>
+                        <input class="input--aluno" type="text">
+                        <label>Nome</label>
+                        <input class="input--aluno" type="text">
+                        <label>Curso</label>
+                        <input class="input--aluno" type="text">
+                    </div>
+                    <br>
+                    <div style="display: flex; justify-content: space-between">
+                        <label>Edital</label>
+                        <input class="input--aluno" type="text">
+                        <label>País Destino</label>
+                        <input class="input--aluno" type="text">
+                        <label>Cidade Destino</label>
+                        <input class="input--aluno" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Universidade</label>
+                        <input class="input--aluno" type="text">
+                        <label>Data Ida</label>
+                        <input class="input--aluno" type="text">
+                        <label>Data Volta</label>
+                        <input class="input--aluno" type="text">
+                    </div>
+                </form>
+                <br><br>
+                <span class="text--error status--hidden">Favor preencher todos os campos</span><br>
+                <button onclick="clearInput()">Limpar</button>
+                <button onclick="send()">Cadastrar</button>
+            </div>
+        </div>
+        
+        <div id="container--bottom">
+            <div id="container--bottom-menu">
+                <span class="button--empty">Página inicial</span>
+                <span> | </span>
+                <span class="button--empty">Portal Unesp</span>
+                <span> | </span>
+                <span class="button--empty">Unidades</span>
+                <span> | </span>
+                <span class="button--empty">Gerenciador de Conteúdo</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/alunos.js"></script>
+</body>
+</html>

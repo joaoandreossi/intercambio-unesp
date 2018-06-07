@@ -1,0 +1,302 @@
+html {
+    min-height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(#00619D, #00A8E2);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vmax;
+    background-repeat: initial;
+    
+    margin: 0;
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:visited {
+    color: blue;
+}
+
+tr {
+    text-align: left;
+    font-size: 11px;
+}
+
+#button--big {
+    background-color: rgb(0, 0, 128);
+    color: white;
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+    width: fit-content;
+    max-width: 400px;
+    padding: 3vh 4vw 3vh 4vw;
+
+    cursor: pointer;
+}
+
+#container--button-big {
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+}
+
+#container--bottom {
+    background-color: #1F406E;
+
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    max-width: 1002px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#container--bottom-menu {
+    color: white;
+    padding-top: 30px;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+#container--content {
+    background-color: white;
+
+    margin-left: 10px;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+
+    font-family: Verdana;
+    font-size: 12px;
+    color: #333333;
+}
+
+#container--main {
+    margin: 0 auto;
+    max-width: 1002px;
+}
+
+#container--menu {
+    background-color: white;
+    width: 19%;
+    border-radius: 10px;
+    padding: 15px 0 20px 1vh;
+}
+
+#container--page {
+    display: flex;
+
+}
+
+#container--path {
+    border-bottom: 1px solid #023f88;
+    padding-bottom: 4px;
+    margin: -10px 0 10px 0;
+}
+
+#container--submenu {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 1vh;
+}
+
+#container--topbar {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: white;
+
+    margin: 0 auto;
+    height: 60px;
+    width: 100%;
+    max-width: 1002px;
+
+    box-shadow: 1px 1px 20px black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#container--topbar-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#container--topbar-links {
+    color: #28405b;
+
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: right;
+
+    padding-top: 5px;
+    padding-right: 10px;
+    height: 50%;
+}
+
+#container--topbar-dropdown {
+    padding-right: 10px;
+    height: 50%;
+    text-align: right;
+}
+
+#icon--loader {
+    margin: 45%;
+}
+
+#image--logounesp {
+    background-image: url(../static/barraunesp-assvisual.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100%;
+    width: 40%;
+}
+
+.button--empty {
+    cursor: pointer;
+}
+
+.button--menu {
+    background-color: #DAE7F4;
+    color: #28405b;
+
+    border: none;
+    border-radius: 5px;
+    padding: 6px 4px;
+    margin: 1px;
+    width: 95%;
+
+    text-align: left;
+    cursor: pointer;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.button--menu-admin {
+    background-color: #f7b4d1 !important;
+}
+
+.button--remove {
+    cursor: pointer;
+}
+
+.container--depo {
+    display: flex;
+    flex-direction: column;
+}
+
+.container--depo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.container--submenu-button{
+    margin: 0.25vh 0 0.25vh 0; 
+}
+
+.image--depo {
+    max-height: 150px;
+    max-width: 250px;
+}
+
+.input--empty {
+    height: 12px;
+    margin: 1px;
+    border: 1px solid #aaa;
+    width: 30%;
+}
+
+.input--empty::placeholder {
+    color: #28405b;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.status--hidden {
+    display: none !important;
+}
+
+.text--arrow {
+    color: #aaa;
+    font-family: Verdana;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.text--error {
+    color: red;
+    font-weight: bold;
+}
+
+.text--greyed {
+    text-decoration: none !important;
+    color: #aaa !important;
+}
+
+.text--path {
+    color: #888;
+    text-decoration: underline;
+    font-family: Verdana;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.text--submenu {
+    text-align: left;
+    color: black;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.text--title {
+    color: white;
+
+    margin: 0 auto;
+    padding: 12px 0 12px 12px;
+    max-width: 1002px;
+
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.text--title-article {
+    color: #023f88;
+    font-family: Verdana;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+@media (max-width: 590px) {
+    #image--logounesp {
+        background-position-x: 10px;
+    }
+    
+    .button--menu {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 430px) {
+    .button--menu {
+        font-size: 7px;
+    }
+}
